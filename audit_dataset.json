@@ -1,0 +1,43 @@
+{
+  "project_metadata": {
+    "project_name": "White Wine Quality Classification System",
+    "course_code": "UAS-Machine-Learning-2026",
+    "student_name": "Ahmad Naufal Zakirin",
+    "student_id": "A11.2024.15758",
+    "university": "Universitas Dian Nuswantoro (UDINUS)"
+  },
+  "dataset_properties": {
+    "dataset_source": "UCI Machine Learning Repository - Wine Quality Dataset",
+    "file_format": "Comma-Separated Values (.csv)",
+    "delimiter_used": ";",
+    "total_records_analyzed": 4898,
+    "total_original_features": 11,
+    "total_target_columns": 1
+  },
+  "data_quality_audit": {
+    "missing_values_detected": false,
+    "total_missing_cells": 0,
+    "duplicate_records_found": 937,
+    "duplicate_handling_strategy": "Keep duplicates to maintain original distribution of sensory test evaluations",
+    "outliers_detected_via_iqr": {
+      "fixed_acidity": 119,
+      "volatile_acidity": 186,
+      "residual_sugar": 7,
+      "alcohol": 0
+    }
+  },
+  "target_class_analysis": {
+    "original_label_column": "quality",
+    "original_score_range": "3 to 9",
+    "binarization_threshold": "Premium if quality >= 6, else Normal",
+    "class_counts": {
+      "Class 0 (Normal Quality Wine)": 1840,
+      "Class 1 (Premium Quality Wine)": 3058
+    },
+    "class_percentages": {
+      "Class 0 (Normal)": 37.5663,
+      "Class 1 (Premium)": 62.4337
+    },
+    "imbalance_status": "Moderate Imbalance - Solved using Stratified Split & Class Weight Balanced Technique"
+  }
+}

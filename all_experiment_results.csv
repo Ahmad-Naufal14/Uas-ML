@@ -1,0 +1,7 @@
+Experiment_ID,Model_Name,Hyperparameters_Used,Train_Accuracy,Test_Accuracy,Precision_Class_1,Recall_Class_1,F1_Score_Macro,Execution_Time_Sec,Validation_Method,Status
+EXP-001,Gaussian Naive Bayes,var_smoothing=1e-09,0.7085,0.7125,0.7310,0.8140,0.7703,0.012,5-Fold Cross Validation,Baseline
+EXP-002,Decision Tree (CART),criterion=gini; max_depth=None,1.0000,0.7854,0.8120,0.8350,0.8233,0.045,5-Fold Cross Validation,Overfitted
+EXP-003,Decision Tree (Pruned),criterion=entropy; max_depth=5,0.7640,0.7580,0.7840,0.8210,0.7510,0.032,5-Fold Cross Validation,Alternative
+EXP-004,K-Nearest Neighbors (KNN),n_neighbors=5; metric=euclidean,0.8450,0.8012,0.8245,0.8610,0.8423,0.098,10-Fold Cross Validation,Alternative
+EXP-005,Support Vector Machine (SVM Baseline),C=1.0; kernel=linear,0.7420,0.7395,0.7510,0.8650,0.7120,1.240,5-Fold Cross Validation,Underfitted
+EXP-006,Support Vector Machine (SVM Optimized),C=1.0; kernel=rbf; gamma=scale; probability=True,0.8642,0.8184,0.8352,0.8824,0.8582,0.850,Stratified Shuffle Split,Optimized_Best
